@@ -5,7 +5,7 @@ exports.create = async (req, res) => {
     try {
         const { title, sort_desc, detail } = req.body
 
-        let file_URL = `/media/${req.file.filename}`
+        let file_URL = `/media/${req?.file?.filename}`
 
         const data = { title, sort_desc, detail, image_URL: file_URL };
 
