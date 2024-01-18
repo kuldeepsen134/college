@@ -4,7 +4,6 @@ require('dotenv').config();
 
 const cors = require('cors')
 const bodyParser = require('body-parser');
-const { authJWT } = require('./app/middleware/auth');
 const { PORT } = require('./app/config/config');
 const port = PORT
 
